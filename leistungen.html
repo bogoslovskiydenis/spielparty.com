@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leistungen - Spielparty</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com?v=3.0.0"></script>
+</head>
+<body class="font-sans text-[#1f2937] bg-[#fffaf4]">
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="text-2xl font-bold text-[#ff7e00]" style="font-family: 'Poppins', sans-serif;">Spielparty</span>
+        <span class="hidden sm:inline-block text-sm text-gray-500">Wir feiern unvergessliche Momente</span>
+      </a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="/" class="text-gray-700 hover:text-[#ff7e00]">Startseite</a>
+        <a href="uber-uns.html" class="text-gray-700 hover:text-[#ff7e00]">Über&nbsp;uns</a>
+        <a href="leistungen.html" class="text-[#ff7e00] font-semibold">Leistungen</a>
+        <a href="galerie.html" class="text-gray-700 hover:text-[#ff7e00]">Galerie</a>
+        <a href="kontakt.html" class="text-gray-700 hover:text-[#ff7e00]">Kontakt</a>
+      </nav>
+      <a href="kontakt.html" class="hidden md:inline-flex items-center px-4 py-2 bg-[#ff7e00] text-white rounded hover:bg-[#e56f00] transition">Jetzt Anfrage</a>
+      <button id="nav-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="/" class="block text-gray-700 hover:text-[#ff7e00]">Startseite</a>
+      <a href="uber-uns.html" class="block text-gray-700 hover:text-[#ff7e00]">Über&nbsp;uns</a>
+      <a href="leistungen.html" class="block text-[#ff7e00] font-semibold">Leistungen</a>
+      <a href="galerie.html" class="block text-gray-700 hover:text-[#ff7e00]">Galerie</a>
+      <a href="kontakt.html" class="block text-gray-700 hover:text-[#ff7e00]">Kontakt</a>
+      <a href="kontakt.html" class="inline-flex items-center px-4 py-2 bg-[#ff7e00] text-white rounded w-full justify-center hover:bg-[#e56f00] transition">Jetzt Anfrage</a>
+    </div>
+  </header>
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 space-y-16">
+    
+    <section aria-labelledby="services-title" class="space-y-8">
+      <h1 id="services-title" class="text-4xl font-bold text-[#ff7e00]" style="font-family: 'Poppins', sans-serif;">Unsere Service-Welten</h1>
+      
+      <div class="divide-y divide-gray-300 md:grid md:grid-cols-3 md:gap-6 md:divide-y-0 md:divide-x">
+        
+        <details class="group p-4 md:p-6 bg-white rounded-md shadow-sm">
+          <summary class="cursor-pointer text-xl font-semibold text-[#00a6ff]" style="font-family: 'Poppins', sans-serif;">Kindergeburtstage</summary>
+          <div class="mt-3 text-gray-700 font-normal" style="font-family: 'Open Sans', sans-serif;">
+            <p>Erleben Sie spannende Themenpartys wie Piraten, Fruit Party, Prinzessinnen oder Superhelden, die Kinderaugen zum Strahlen bringen.</p>
+            <ul class="list-disc list-inside mt-2 space-y-1">
+              <li><strong>Dauer:</strong> 3 Stunden voller Abenteuer und Spaß</li>
+              <li><strong>Empfohlene Altersgruppen:</strong> 4 bis 12 Jahre</li>
+              <li>Professionelle Animation und altersgerechte Spiele</li>
+            </ul>
+            <img src="images/leistungen-services-kindergeburtstag-themen.jpeg" alt="Kinder jubeln auf einem Piraten-Themengeburtstag" width="640" height="480" class="mt-4 rounded-md object-cover">
+          </div>
+        </details>
+
+        
+        <details class="group p-4 md:p-6 bg-white rounded-md shadow-sm">
+          <summary class="cursor-pointer text-xl font-semibold text-[#00a6ff]" style="font-family: 'Poppins', sans-serif;">Feiertage &amp; Feste</summary>
+          <div class="mt-3 text-gray-700 font-normal" style="font-family: 'Open Sans', sans-serif;">
+            <p>Unsere festlichen Events sorgen für unvergessliche Momente, ob Oster-Rallye, Halloween-Gruselspaß oder die kreative Weihnachts-Werkstatt.</p>
+            <ul class="list-disc list-inside mt-2 space-y-1">
+              <li>Mit altersgerechten Aktivitäten für Familien und Gruppen</li>
+              <li>Individuelle Gestaltung passend zum Anlass</li>
+              <li>Liebevolle Dekoration und Betreuung inklusive</li>
+            </ul>
+            <img src="images/leistungen-services-feiertage-feste-halloween.jpeg" alt="Kinder in Kostümen feiern Halloween" width="640" height="480" class="mt-4 rounded-md object-cover">
+          </div>
+        </details>
+
+        
+        <details class="group p-4 md:p-6 bg-white rounded-md shadow-sm">
+          <summary class="cursor-pointer text-xl font-semibold text-[#00a6ff]" style="font-family: 'Poppins', sans-serif;">Firmenevents</summary>
+          <div class="mt-3 text-gray-700 font-normal" style="font-family: 'Open Sans', sans-serif;">
+            <p>Fördern Sie Teamgeist und Spaß bei Family Days, Sommerfesten oder spannenden Indoor-Teamchallenges.</p>
+            <ul class="list-disc list-inside mt-2 space-y-1">
+              <li>Individuell auf Ihre Firma zugeschnittene Aktivitäten</li>
+              <li>Professionelle Moderation und Organisation</li>
+              <li>Für Kinder und Erwachsene gleichermaßen geeignet</li>
+            </ul>
+            <img src="images/leistungen-services-firmenevents-teamchallenge.jpeg" alt="Firmenmitarbeiter bei einem Indoor-Teamchallenge Event" width="640" height="480" class="mt-4 rounded-md object-cover">
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <section aria-labelledby="packages-title" class="space-y-8">
+      <h2 id="packages-title" class="text-4xl font-bold text-[#ff7e00]" style="font-family: 'Poppins', sans-serif;">Pakete &amp; Preise</h2>
+      <div class="space-y-6 md:grid md:grid-cols-3 md:gap-8 md:space-y-0">
+        
+        <article class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold text-[#00a6ff] mb-3" style="font-family: 'Poppins', sans-serif;">Basis-Paket</h3>
+            <p class="text-gray-700 font-normal mb-4" style="font-family: 'Open Sans', sans-serif;">Animation, Musik, Dekor für den perfekten Start in Ihre Feier.</p>
+            <ul class="list-disc list-inside mb-6 space-y-1 text-gray-700 font-normal" style="font-family: 'Open Sans', sans-serif;">
+              <li>Professionelle Spiele und Unterhaltung</li>
+              <li>Musikalische Begleitung</li>
+              <li>Individuelle Dekoration passend zum Thema</li>
+            </ul>
+          </div>
+          <div class="text-xl font-bold text-[#ff7e00]">ab 299 €</div>
+          <a href="kontakt.html" class="mt-6 inline-block px-4 py-2 bg-[#ff7e00] text-white rounded hover:bg-[#e56f00] text-center transition" style="font-family: 'Poppins', sans-serif;">Anfrage senden</a>
+        </article>
+
+        
+        <article class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold text-[#00a6ff] mb-3" style="font-family: 'Poppins', sans-serif;">Premium-Paket</h3>
+            <p class="text-gray-700 font-normal mb-4" style="font-family: 'Open Sans', sans-serif;">Zusätzlich mit Candy Bar und Fotobox für noch mehr Spaß.</p>
+            <ul class="list-disc list-inside mb-6 space-y-1 text-gray-700 font-normal" style="font-family: 'Open Sans', sans-serif;">
+              <li>Alle Leistungen des Basis-Pakets</li>
+              <li>Süße Candy Bar inklusive</li>
+              <li>Professionelle Fotobox mit Accessoires</li>
+            </ul>
+          </div>
+          <div class="text-xl font-bold text-[#ff7e00]">ab 499 €</div>
+          <a href="kontakt.html" class="mt-6 inline-block px-4 py-2 bg-[#ff7e00] text-white rounded hover:bg-[#e56f00] text-center transition" style="font-family: 'Poppins', sans-serif;">Anfrage senden</a>
+        </article>
+
+        
+        <article class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold text-[#00a6ff] mb-3" style="font-family: 'Poppins', sans-serif;">All-Inclusive</h3>
+            <p class="text-gray-700 font-normal mb-4" style="font-family: 'Open Sans', sans-serif;">Das Rundum-sorglos-Paket mit Location, Catering und Fotograf.</p>
+            <ul class="list-disc list-inside mb-6 space-y-1 text-gray-700 font-normal" style="font-family: 'Open Sans', sans-serif;">
+              <li>Alle Leistungen des Premium-Pakets</li>
+              <li>Exklusive Locationbereitstellung</li>
+              <li>Professionelles Catering für Groß & Klein</li>
+              <li>Fotograf dokumentiert Ihre Veranstaltung</li>
+            </ul>
+          </div>
+          <div class="text-xl font-bold text-[#ff7e00]">ab 999 €</div>
+          <a href="kontakt.html" class="mt-6 inline-block px-4 py-2 bg-[#ff7e00] text-white rounded hover:bg-[#e56f00] text-center transition" style="font-family: 'Poppins', sans-serif;">Anfrage senden</a>
+        </article>
+      </div>
+
+      
+      <div class="mt-12 overflow-x-auto">
+        <table class="min-w-full bg-white rounded-md shadow-md text-left" style="font-family: 'Open Sans', sans-serif;">
+          <thead class="bg-[#ffd400] text-[#1f2937]">
+            <tr>
+              <th class="px-4 py-3">Leistungsumfang</th>
+              <th class="px-4 py-3">Basis</th>
+              <th class="px-4 py-3">Premium</th>
+              <th class="px-4 py-3">All-Inclusive</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr>
+              <td class="px-4 py-3">Animation & Spiele</td>
+              <td class="px-4 py-3 text-center">✓</td>
+              <td class="px-4 py-3 text-center">✓</td>
+              <td class="px-4 py-3 text-center">✓</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Musik & Unterhaltung</td>
+              <td class="px-4 py-3 text-center">✓</td>
+              <td class="px-4 py-3 text-center">✓</td>
+              <td class="px-4 py-3 text-center">✓</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Dekoration</td>
+              <td class="px-4 py-3 text-center">✓</td>
+              <td class="px-4 py-3 text-center">✓</td>
+              <td class="px-4 py-3 text-center">✓</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Candy Bar</td>
+              <td class="px-4 py-3 text-center">–</td>
+              <td class="px-4 py-3 text-center">✓</td>
+              <td class="px-4 py-3 text-center">✓</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Fotobox</td>
+              <td class="px-4 py-3 text-center">–</td>
+              <td class="px-4 py-3 text-center">✓</td>
+              <td class="px-4 py-3 text-center">✓</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Location</td>
+              <td class="px-4 py-3 text-center">–</td>
+              <td class="px-4 py-3 text-center">–</td>
+              <td class="px-4 py-3 text-center">✓</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Catering</td>
+              <td class="px-4 py-3 text-center">–</td>
+              <td class="px-4 py-3 text-center">–</td>
+              <td class="px-4 py-3 text-center">✓</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Fotograf</td>
+              <td class="px-4 py-3 text-center">–</td>
+              <td class="px-4 py-3 text-center">–</td>
+              <td class="px-4 py-3 text-center">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    
+    <section aria-labelledby="faq-title" class="space-y-8">
+      <h2 id="faq-title" class="text-4xl font-bold text-[#ff7e00]" style="font-family: 'Poppins', sans-serif;">Häufige Fragen</h2>
+      <div class="space-y-4">
+        <details class="p-4 bg-white rounded-md shadow-sm">
+          <summary class="cursor-pointer text-xl font-semibold text-[#00a6ff]" style="font-family: 'Poppins', sans-serif;">Wie früh sollte ich buchen?</summary>
+          <p class="mt-2 text-gray-700" style="font-family: 'Open Sans', sans-serif;">Wir empfehlen mindestens 6 Wochen Vorlaufzeit für eine optimale Planung, gerade in beliebten Monaten.</p>
+        </details>
+
+        <details class="p-4 bg-white rounded-md shadow-sm">
+          <summary class="cursor-pointer text-xl font-semibold text-[#00a6ff]" style="font-family: 'Poppins', sans-serif;">Ist eine Location inklusive?</summary>
+          <p class="mt-2 text-gray-700" style="font-family: 'Open Sans', sans-serif;">Im All-Inclusive-Paket ist die Location bereits enthalten. Für andere Pakete beraten wir Sie gern zur passenden Locationwahl.</p>
+        </details>
+
+        <details class="p-4 bg-white rounded-md shadow-sm">
+          <summary class="cursor-pointer text-xl font-semibold text-[#00a6ff]" style="font-family: 'Poppins', sans-serif;">Können spezielle Mottos umgesetzt werden?</summary>
+          <p class="mt-2 text-gray-700" style="font-family: 'Open Sans', sans-serif;">Ja, wir passen alle Angebote individuell auf Ihre Wunschmottos an – ob Piratenschiff, Prinzessinnenschloss oder Superhelden-Abenteuer.</p>
+        </details>
+
+        <details class="p-4 bg-white rounded-md shadow-sm">
+          <summary class="cursor-pointer text-xl font-semibold text-[#00a6ff]" style="font-family: 'Poppins', sans-serif;">Sind die Events wetterunabhängig?</summary>
+          <p class="mt-2 text-gray-700" style="font-family: 'Open Sans', sans-serif;">Unsere Firmenevents und Kindergeburtstage können sowohl indoor als auch outdoor stattfinden, je nach Plan und Wetterlage.</p>
+        </details>
+      </div>
+    </section>
+
+  </main><footer class="bg-[#1f2937] text-white py-10 mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Spielparty</h3>
+      <p class="text-sm leading-relaxed">Hinterm Stern 14<br>22041 Hamburg<br>Deutschland</p>
+      <p class="mt-2 text-sm">Tel: <a href="tel:+49406525052" class="hover:underline">+49 40 6525052</a><br>E-Mail: <a href="mailto:contact@spielparty.com" class="hover:underline">contact@spielparty.com</a></p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Schnellzugriff</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="hover:underline">Startseite</a></li>
+        <li><a href="uber-uns.html" class="hover:underline">Über uns</a></li>
+        <li><a href="leistungen.html" class="hover:underline">Leistungen</a></li>
+        <li><a href="galerie.html" class="hover:underline">Galerie</a></li>
+        <li><a href="kontakt.html" class="hover:underline">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Rechtliches</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="terms-and-conditions.html" class="hover:underline">AGB</a></li>
+        <li><a href="privacy-policy.html" class="hover:underline">Datenschutzerklärung</a></li>
+      </ul>
+      <div class="mt-4 flex space-x-4">
+        <a href="https://www.facebook.com/" aria-label="Facebook" class="hover:text-[#ff7e00]"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 0H2C.9 0 0 .9 0 2v20c0 1.1.9 2 2 2h10V14h-3v-3h3V8c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.6.1 3 .2v3.4h-2c-1.6 0-2 .8-2 2v2.6h4l-.5 3H17V24h5c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></svg></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram" class="hover:text-[#ff7e00]"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5.6.2 1 .5 1.5 1 .5.5.8.8 1 1.5.2.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5-.2.6-.5 1-1 1.5-.5.5-.8.8-1.5 1-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5-.6-.2-1-.5-1.5-1-.5-.5-.8-.8-1-1.5-.2-.5-.4-1.3-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5.2-.6.5-1 1-1.5.5-.5.8-.8 1.5-1 .5-.2 1.3-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.5.4 3.7.7 2.9 1 2.2 1.5 1.5 2.2.8 2.9.3 3.6 0 4.3-.3 5.1-.5 6.3-.6 7.6-.7 8.9-.7 9.3-.7 12s0 3.1.1 4.4c.1 1.3.3 2.5.6 3.3.3.8.8 1.5 1.5 2.2.7.7 1.4 1.2 2.2 1.5.8.3 2 .5 3.3.6C8.9 23.8 9.3 24 12 24s3.1 0 4.4-.1c1.3-.1 2.5-.3 3.3-.6.8-.3 1.5-.8 2.2-1.5.7-.7 1.2-1.4 1.5-2.2.3-.8.5-2 .6-3.3.1-1.3.1-1.7.1-4.4s0-3.1-.1-4.4c-.1-1.3-.3-2.5-.6-3.3-.3-.8-.8-1.5-1.5-2.2C20.5.3 19.8-.2 19-.5c-.8-.3-2-.5-3.3-.6C15.1 0 14.7 0 12 0L12 0z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="mt-8 text-center text-xs text-gray-400">© 2024 Spielparty. Alle Rechte vorbehalten.</div>
+</footer>
+<div id="cookie-banner" class="fixed bottom-0 inset-x-0 bg-[#1f2937] text-white p-4 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 md:space-x-4 shadow-lg hidden">
+  <span>Diese Website verwendet Cookies, um Ihr Erlebnis zu verbessern.</span>
+  <button id="cookie-accept" class="px-4 py-2 bg-[#ff7e00] rounded hover:bg-[#e56f00] transition">Cookies akzeptieren</button>
+</div>
+<script>
+  (function(){
+    const cookieName = 'cookieConsent_' + Math.random().toString(36).substring(2,11);
+    if(!localStorage.getItem(cookieName)){
+      const banner = document.getElementById('cookie-banner');
+      banner.classList.remove('hidden');
+      document.getElementById('cookie-accept').addEventListener('click', () => {
+        localStorage.setItem(cookieName, 'accepted');
+        banner.classList.add('hidden');
+      });
+    }
+  })();
+</script>
+</body>
+</html>
